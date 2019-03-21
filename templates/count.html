@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Count result!!!!</title>
+</head>
+<body>
+	<h1>Here are the results of the count</h1>
+	<h2> You have {{ size }} words used {{ times }} times</h2>
+	{% for items,value in textDic.items %}
+		<b>{{items}} => {{value}}</b> <br>
+	{% endfor%}
+	<h2>Your original text</h2>
+	<p style="border:2px groove gray; background-color: gray ; color: white;"> {{ text }} </p>
+	<a href='{% url "homePage" %}'>Restart</a>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Count application</title>
+</head>
+<body>
+	<h1>Try putting your words to see the results....</h1>
+	<form action ='{% url "countPage" %}'>
+		<textarea rows="20" cols="40" name="text" placeholder="get in"></textarea>
+		<br/>
+		<input type="submit" value="Count"/>
+	</form>
+	<a href=" {% url 'about' %}">About</a>
+</body>
+</html>
